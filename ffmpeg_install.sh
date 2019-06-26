@@ -147,35 +147,35 @@ cd ~/ffmpeg_sources
 wget http://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
 tar xjvf ffmpeg-snapshot.tar.bz2
 cd ffmpeg
-PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./configure \
-  --prefix="$HOME/ffmpeg_build" \
-  --extra-cflags="-I$HOME/ffmpeg_build/include" \
-  --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
-  --bindir="$HOME/bin" \
-  --disable-debug \
---disable-shared \
---enable-static \
---disable-ffplay \
---disable-ffserver \
---disable-doc \
---enable-gpl \
---enable-pthreads \
---enable-postproc \
---enable-gray \
---enable-runtime-cpudetect \
---enable-libfaac \
---enable-libfdk-aac \
---enable-libmp3lame \
---enable-libtheora \
---enable-libvorbis \
---enable-libx264 \
---enable-bzlib \
---enable-zlib \
---enable-nonfree \
---enable-version3 \
---enable-libvpx \
---disable-devices \
---enable-decoder=png \
+PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./configure 
+  --prefix="$HOME/ffmpeg_build" 
+  --extra-cflags="-I$HOME/ffmpeg_build/include" 
+  --extra-ldflags="-L$HOME/ffmpeg_build/lib" 
+  --bindir="$HOME/bin" 
+  --disable-debug 
+--disable-shared 
+--enable-static 
+--disable-ffplay 
+--disable-ffserver 
+--disable-doc 
+--enable-gpl 
+--enable-pthreads 
+--enable-postproc 
+--enable-gray 
+--enable-runtime-cpudetect 
+--enable-libfaac 
+--enable-libfdk-aac 
+--enable-libmp3lame 
+--enable-libtheora 
+--enable-libvorbis 
+--enable-libx264 
+--enable-bzlib 
+--enable-zlib 
+--enable-nonfree 
+--enable-version3 
+--enable-libvpx 
+--disable-devices 
+--enable-decoder=png 
 --enable-encoder=png 
 PATH="$HOME/bin:$PATH" 
 make
